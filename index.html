@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="light">
+
+  <!--  SVG Background -->
+  <!-- Light Mode Background -->
+<div class="background light">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 1000 100" preserveAspectRatio="none">
+    <rect fill="#f4f1e8" width="100%" height="100%"/>
+    <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z" fill="#dcccbe"/>
+  </svg>
+</div>
+
+<!-- Dark Mode Background -->
+<div class="background dark">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 1000 100" preserveAspectRatio="none">
+    <rect fill="#0f2027" width="100%" height="100%"/>
+    <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z" fill="#233e46"/>
+  </svg>
+</div>
+
+
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="My Logo">
+    </div>
+
+    <!-- Navigation -->
+    <ul class="nav-links">
+      <li class="active"><a href="#home">Home<span></span></a></li>
+      <li><a href="#about">About<span></span></a></li>
+      <li><a href="#projects">Projects<span></span></a></li>
+      <li><a href="#skills">Skills<span></span></a></li>
+      <li><a href="#certificates">Certificates<span></span></a></li>
+    </ul>
+
+    <!-- Right Controls -->
+    <div class="nav-controls">
+      <!-- Theme Toggle -->
+      <div class="theme-toggle" id="themeToggle" title="Dark Mode">
+        <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <circle cx="12" cy="12" r="5"/>
+          <g stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </g>
+        </svg>
+        <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="display:none;">
+          <path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79z"/>
+        </svg>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sections -->
+  <main>
+  
+<!-- Home Section -->
+<section id="home" class="home-section">
+  <div class="home-content">
+    <!-- Left side: Text -->
+    <div class="home-text fade-element from-left">
+      <h1>Hello, I'm <span>Fermina Cancino</span></h1>
+      <p>Electronics Engineer & Developer</p>
+
+      <!-- Social Links -->
+      <div class="navigation">
+        <ul>
+          <li class="list">
+            <a href="https://www.linkedin.com/in/ferminacancino-electronicsengineer" target="_blank">
+              <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+              <span class="text">LinkedIn</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="https://github.com/fermcancino" target="_blank">
+              <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+              <span class="text">Github</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="viber://chat?number=09463002207">
+              <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+              <span class="text">Viber</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Right side: Image -->
+    <div class="home-image fade-element from-right">
+      <img src="fermina.png" alt="Fermina Cancino" class="profile-img">
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    
+    <div class="about-image fade-element from-left">
+      <img src="fermina.png" alt="About Me">
+    </div>
+
+    <!-- About Text -->
+    <div class="about-text fade-element from-right">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate developer with a background in Electronics Engineering, 
+        now transitioning into automation and software development.  
+        My focus is on building clean, responsive, and user-friendly applications 
+        with modern technologies.
+      </p>
+      <p>
+        I enjoy solving problems, learning new skills, and experimenting with 
+        creative UI designs like neumorphism and glassmorphism.  
+        My goal is to grow as both a <strong>Front-End Developer</strong> and 
+        <strong>Automation Engineer</strong>, combining my technical foundation 
+        with software engineering.
+      </p>
+      <p>
+        One of my proudest projects is my 
+        <strong>All-in-One Engineer’s Toolkit Calculator</strong> — 
+        a fully responsive application that integrates scientific, base conversion, 
+        unit, and currency calculations in a single platform.
+      </p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+   </div>
+  </section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <i class="fab fa-python"></i>
+      <h3>Python</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-js-square"></i>
+      <h3>JavaScript</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-html5"></i>
+      <h3>HTML5</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-css3-alt"></i>
+      <h3>CSS3</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fas fa-cogs"></i>
+      <h3>Automation</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-github"></i>
+      <h3>GitHub</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="certificates-section">
+  <h2 class="section-title">Certificates</h2>
+  <div class="certificates-grid">
+    
+    <!-- Certificate Card -->
+    <div class="certificate-card fade-element from-left">
+      <div class="certificate-inner">
+        <!-- Front -->
+        <div class="certificate-front">
+          <img src="logo.png" alt="Certificate 1">
+        </div>
+        <!-- Back -->
+        <div class="certificate-back">
+          <h3>Certificate Title</h3>
+          <p>Issued by Organization • 2025</p>
+          <a href="certificate1.jpg" target="_blank" class="btn">View Full</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another Certificate -->
+    <div class="certificate-card fade-element from-right">
+      <div class="certificate-inner">
+        <div class="certificate-front">
+          <img src="logo.png" alt="Certificate 2">
+        </div>
+        <div class="certificate-back">
+          <h3>Certificate Title</h3>
+          <p>Issued by Organization • 2025</p>
+          <a href="certificate2.jpg" target="_blank" class="btn">View Full</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more certificates by duplicating -->
+    
+  </div>
+</section>
+
+
+
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
