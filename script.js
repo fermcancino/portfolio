@@ -1,28 +1,3 @@
-// === Smooth Scroll + Fade ===
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links li a");
-const navItems = document.querySelectorAll(".nav-links li");
-
-// Smooth scroll + fade
-navLinks.forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
-
-    sections.forEach(sec => sec.classList.remove("active"));
-    setTimeout(() => {
-      target.classList.add("active");
-      revealOnScroll(); // trigger fade immediately
-    }, 300);
-  });
-});
-
-// Activate first section
-if (sections.length > 0) {
-  sections[0].classList.add("active");
-}
-
 // === Theme Toggle ===
 const themeToggle = document.getElementById("themeToggle");
 const iconSun = document.getElementById("iconSun");
@@ -43,73 +18,10 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-// === Scroll Spy + section fade activation ===
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    const sectionHeight = section.clientHeight;
-
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
-      section.classList.add("active");
-    }
-  });
-
-  navItems.forEach(li => {
-    li.classList.remove("active");
-    const link = li.querySelector("a");
-    if (link.getAttribute("href").includes(current)) {
-      li.classList.add("active");
-    }
-  });
-
-  revealOnScroll(); // ensure fade triggers while scrolling
-});
-
-// Reveal elements when in viewport
-const fadeElements = document.querySelectorAll(".fade-element");
-
-function revealOnScroll() {
-  const triggerBottom = window.innerHeight * 0.85;
-  const isMobile = window.innerWidth <= 768;
-
-  fadeElements.forEach(el => {
-    const boxTop = el.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      if (isMobile) {
-        el.classList.add("show-vertical");
-      } else {
-        el.classList.add("show");
-      }
-    } else {
-      el.classList.remove("show", "show-vertical");
-    }
-  });
-}
-
-// Call on scroll and load
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-
-// Force Home section to animate on page load
-window.addEventListener("load", () => {
-  const homeText = document.querySelector(".home-text");
-  const homeImage = document.querySelector(".home-image");
-  if (window.innerWidth <= 768) {
-    homeText.classList.add("show-vertical");
-    homeImage.classList.add("show-vertical");
-  } else {
-    homeText.classList.add("show");
-    homeImage.classList.add("show");
-  }
-});
-
 // === Hamburger Menu ===
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links li");
 
 if (menuToggle && navMenu) {
   menuToggle.addEventListener("click", () => {
@@ -125,22 +37,82 @@ if (menuToggle && navMenu) {
   });
 }
 
-// === Active Link Highlight for Social Links (.list) ===
-const list = document.querySelectorAll('.list');
-function activeLink() {
-  list.forEach(item => item.classList.remove('active'));
-  this.classList.add('active');
-}
-list.forEach(item => item.addEventListener('click', activeLink));
+// === Sections & Active Underline ===
+const sections = document.querySelectorAll("section");
 
-const skillCards = document.querySelectorAll(".skills-container .skill-card");
+const observerOptions = {
+  root: null,
+  rootMargin: "-50% 0px -50% 0px", // trigger near center of viewport
+  threshold: 0
+};
 
-function revealSkills() {
-  const trigger = window.innerHeight * 0.85;
-  skillCards.forEach(card => {
-    const top = card.getBoundingClientRect().top;
-    if (top < trigger) card.classList.add("show");
-    else card.classList.remove("show");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute("id");
+    navLinks.forEach(link => link.classList.remove("active"));
+    if (entry.isIntersecting) {
+      const activeLink = document.querySelector(`.nav-links li a[href="#${id}"]`).parentElement;
+      activeLink.classList.add("active");
+    }
   });
-}
+}, observerOptions);
 
+sections.forEach(section => observer.observe(section));
+
+// === Smooth Scroll on Click ===
+navLinks.forEach(link => {
+  const anchor = link.querySelector("a");
+  anchor.addEventListener("click", e => {
+    e.preventDefault();
+    const targetId = anchor.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    targetSection.scrollIntoView({ behavior: "smooth" });
+
+    // Immediately set active link
+    navLinks.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
+const toolkitToggle = document.getElementById("toolkitToggle");
+const toolkitContainer = document.querySelector(".toolkit-container");
+
+toolkitToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  toolkitContainer.classList.toggle("active");
+  toolkitToggle.classList.toggle("active");
+});
+
+const btn = document.querySelector(".toolkit-btn");
+
+btn.addEventListener("mousemove", e => {
+  const rect = btn.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+  btn.style.setProperty("--x", `${x}%`);
+  btn.style.setProperty("--y", `${y}%`);
+});
+const icons = document.querySelectorAll(".toolkit-icons a");
+const pages = document.querySelectorAll(".toolkit-page");
+
+icons.forEach(icon => {
+  icon.addEventListener("click", e => {
+    e.preventDefault();
+    const targetId = icon.getAttribute("data-page");
+
+    // Remove active class from all pages
+    pages.forEach(p => p.classList.remove("active"));
+
+    // Activate the clicked page
+    const targetPage = document.getElementById(targetId);
+    if (targetPage) {
+      targetPage.classList.add("active");
+    }
+
+    // Scroll smoothly to the pages container
+    document.querySelector(".toolkit-pages").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
