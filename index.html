@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Home</title>
+  <title>Fermina - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="light">
 
-  <!--  SVG Background -->
   <!-- Light Mode Background -->
 <div class="background light">
   <svg xmlns="http://www.w3.org/2000/svg" 
@@ -28,28 +28,39 @@
   </svg>
 </div>
 
-
-
   <!-- Navbar -->
   <header class="navbar">
     <!-- Logo -->
-    <div class="logo">
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="logo">
       <img src="logo.png" alt="My Logo">
     </div>
 
     <!-- Navigation -->
     <ul class="nav-links">
-      <li class="active"><a href="#home">Home<span></span></a></li>
-      <li><a href="#about">About<span></span></a></li>
-      <li><a href="#projects">Projects<span></span></a></li>
-      <li><a href="#skills">Skills<span></span></a></li>
-      <li><a href="#certificates">Certificates<span></span></a></li>
+      <li class="active">
+        <a data-aos="fade-down" data-aos-duration="500" href="#home"><i class="fas fa-home"></i> Home<span></span></a>
+      </li>
+      <li>
+        <a data-aos="fade-down" data-aos-duration="1000" href="#about"><i class="fas fa-user"></i> About<span></span></a>
+      </li>
+      <li>
+        <a data-aos="fade-down" data-aos-duration="1500" href="#projects"><i class="fas fa-code"></i> Projects<span></span></a>
+      </li>
+      <li>
+        <a data-aos="fade-down" data-aos-duration="2000" href="#skills"><i class="fas fa-cogs"></i> Skills<span></span></a>
+      </li>
+      <li>
+        <a data-aos="fade-down" data-aos-duration="2500" href="#certificates"><i class="fas fa-certificate"></i> Certificates<span></span></a>
+      </li>
+      <li>
+        <a data-aos="fade-down" data-aos-duration="3000" href="#contact"><i class="fas fa-envelope"></i> Contact<span></span></a>
+      </li>
     </ul>
 
     <!-- Right Controls -->
     <div class="nav-controls">
       <!-- Theme Toggle -->
-      <div class="theme-toggle" id="themeToggle" title="Dark Mode">
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000" class="theme-toggle" id="themeToggle" title="Dark Mode">
         <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
           <circle cx="12" cy="12" r="5"/>
           <g stroke="currentColor" stroke-width="2">
@@ -63,34 +74,67 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </g>
         </svg>
-        <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="display:none;">
+        <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="1 -3 26 26" fill="currentColor" width="30" height="30" style="display:none;">
           <path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79z"/>
         </svg>
       </div>
 
       <!-- Hamburger -->
-      <div class="menu-toggle" id="menuToggle">
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000" class="menu-toggle" id="menuToggle">
         <span></span>
         <span></span>
         <span></span>
+        <img src="fe.png" alt="Menu">
       </div>
     </div>
   </header>
 
-  <!-- Sections -->
-  <main>
-  
-<!-- Home Section -->
+<!-- Sections -->
+<main>
+
+  <!-- Home Section -->
 <section id="home" class="home-section">
   <div class="home-content">
     <!-- Left side: Text -->
     <div class="home-text">
-      <h1>Hello, I'm <span>Fermina Cancino</span></h1>
-      <p>Electronics Engineer & Developer</p>
+      <h1 data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="1000" class="bouncy">
+        <span style="--i:0">H</span><span style="--i:1">e</span><span style="--i:2">l</span><span style="--i:3">l</span><span style="--i:4">o</span><span style="--i:5">,</span>
+        <span style="--i:6"> </span><br>
+        <span style="--i:7">I</span><span style="--i:8">'</span><span style="--i:9">m</span>
+        <span style="--i:10"> </span>
+        <span style="--i:11">F</span><span style="--i:12">e</span><span style="--i:13">r</span><span style="--i:14">m</span><span style="--i:15">i</span><span style="--i:16">n</span><span style="--i:17">a</span><span style="--i:18">.</span>
+      </h1>
+
+      <p class="bouncy-sub" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="2000">
+        Electronics Engineer & Developer
+      </p>
 
       <!-- Social Links -->
-      <div class="navigation">
-        <ul>
+      <div class="navigation" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
+     data-aos-duration="2500">
+        <ul data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
+     data-aos-duration="3000">
+          <li class="list">
+            <a href="https://github.com/fermcancino" target="_blank">
+              <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+              <span class="text">Github</span>
+              <span class="circle"></span>
+            </a>
+          </li>          
           <li class="list">
             <a href="https://www.linkedin.com/in/ferminacancino-electronicsengineer" target="_blank">
               <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
@@ -99,19 +143,19 @@
             </a>
           </li>
           <li class="list">
-            <a href="https://github.com/fermcancino" target="_blank">
-              <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
-              <span class="text">Github</span>
+            <a href="mailto:fermcancino@gmail.com" target="_blank">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <span class="text">Email</span>
               <span class="circle"></span>
             </a>
           </li>
           <li class="list">
-            <a href="viber://chat?number=09463002207">
+            <a href="https://wa.me/639463002207">
               <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
-              <span class="text">Viber</span>
+              <span class="text">WhatsApp</span>
               <span class="circle"></span>
             </a>
-          </li>
+          </li>          
           <div class="indicator"></div>
         </ul>
       </div>
@@ -119,136 +163,1028 @@
     </div>
 
     <!-- Right side: Image -->
-    <div class="home-image">
-      <img src="fermina.png" alt="Fermina Cancino" class="profile-img">
-    </div>
+<div class="home-image" data-aos="zoom-in"
+     data-aos-duration="3000">
+  <img src="home-light.gif" alt="Fermina Cancino" class="profile-img light">
+  <img src="home-dark.gif" alt="Fermina Cancino" class="profile-img dark">
+</div>
+
+
   </div>
 </section>
 
-<!-- About Section -->
-<section class="about-section" id="about">
+<!-- About Section  -->
+<section id="about" class="about-section">
+ <h2 class="section-title autoShow">From Circuits to Code</h2>
   <div class="about-container">
-    
-    <div class="about-image">
-      <img src="fermina.png" alt="About Me">
-    </div>
+    <video data-aos="zoom-in"
+     data-aos-duration="1000" id="aboutVideo" class="about-gif fadeUp" muted playsinline></video>
+  </div>
+</section>
 
-    <!-- About Text -->
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        I’m a passionate developer with a background in Electronics Engineering, 
-        now transitioning into automation and software development.  
-        My focus is on building clean, responsive, and user-friendly applications 
-        with modern technologies.
-      </p>
-      <p>
-        I enjoy solving problems, learning new skills, and experimenting with 
-        creative UI designs like neumorphism and glassmorphism.  
-        My goal is to grow as both a <strong>Front-End Developer</strong> and 
-        <strong>Automation Engineer</strong>, combining my technical foundation 
-        with software engineering.
-      </p>
-      <p>
-        One of my proudest projects is my 
-        <strong>All-in-One Engineer’s Toolkit Calculator</strong> — 
-        a fully responsive application that integrates scientific, base conversion, 
-        unit, and currency calculations in a single platform.
-      </p>
-      <a href="#projects" class="btn">Explore My Work</a>
-    </div>
-   </div>
-  </section>
-
-<!-- Project Section -->
+  <!-- Project Section -->
 <section id="projects" class="projects-section">
-  <h2 class="section-title">My Project</h2>
+  <h2 class="section-title autoShow">My Projects</h2>
 
   <div class="project-wrapper">
     <!-- Image card -->
     <div class="project-card card-image">
-      <img src="your-image.jpg" alt="Engineer Toolkit">
+      <img src="frontpage.png" alt="Engineer Toolkit" class="imageReveal" 
+      data-aos="zoom-in-up" data-aos-duration="3000" >
     </div>
 
     <!-- Description card -->
     <div class="project-card card-description">
-      <h3>All-in-One Engineer Toolkit</h3>
+      <h3 >All-in-One Engineer Toolkit</h3>
       <br>
       <p>
-        The All-in-One Engineer’s Toolkit is a comprehensive digital resource designed to streamline and simplify complex engineering calculations. This toolkit brings together a wide array of essential mathematical, statistical, and scientific tools in one intuitive platform, making it an indispensable companion for engineers, students, and technical professionals.
+        The <strong>All-in-One Engineer’s Toolkit</strong> is a powerful digital platform that brings together <strong>50+ advanced calculators</strong> in one intuitive hub. Designed for engineers, students, and technical professionals, it simplifies everything from basic arithmetic to advanced topics like calculus, trigonometry, statistics, geometry, and probability.
       </p>
       <br>
-      <p>With features ranging from basic arithmetic and algebraic solvers to advanced calculus, geometry, trigonometry, and measurement converters, the toolkit covers every major area required for problem-solving in engineering and technical fields. It also includes specialized modules for statistics, probability, number theory, and unit conversions, ensuring accuracy and efficiency in every calculation.
+      <p>With specialized solvers for derivatives, integrals, limits, series expansions, and unit conversions, this toolkit is your complete problem-solving companion — saving time, boosting accuracy, and streamlining even the toughest challenges. 
       </p>
       <br>
-      <p>Whether you’re tackling everyday math, analyzing data, converting units, or solving advanced equations, the All-in-One Engineer’s Toolkit provides reliable, easy-to-use solutions to support your workflow and enhance productivity.
+      <p> 
+        Built entirely with <strong>HTML, CSS, and JavaScript</strong>, it runs seamlessly in the browser without requiring any external software.
+      </p>
+      <br>
+      <p>
+        <em><strong>Explore</strong> the calculator by <strong>clicking the button below</strong> and experience engineering made simple.</em>
       </p>
     </div>
   </div>
 
-   <!-- Toolkit Container -->
+<!-- Toolkit Container -->
 <div class="toolkit-container">
   <!-- Central Button -->
   <button type="button" class="toolkit-btn" id="toolkitToggle">
-    <span class="btn-text">All-in-One Engineer’s Toolkit</span>
+    <span class="btn-text fadeUp">All-in-One Engineer’s Toolkit</span>
     <i class="fas fa-calculator btn-icon"></i>
     <span class="view-more">Click to View More</span>
   </button>
 
   <!-- Radial Icons -->
-  <div class="toolkit-icons">
-    <a href="#" data-page="page1" title="Arithmetic"><i class="fas fa-plus"></i><span class="indicator">Arithmetic & Basic Math</span></a>
-    <a href="#" data-page="page2" title="Statistics"><i class="fas fa-chart-bar"></i><span class="indicator">Statistics & Probability</span></a>
-    <a href="#" data-page="page3" title="Measurement"><i class="fas fa-ruler-combined"></i><span class="indicator">Measurement / Converters</span></a>
-    <a href="#" data-page="page4" title="Number Theory"><i class="fas fa-square-root-alt"></i><span class="indicator">Number Theory & Tools</span></a>
-    <a href="#" data-page="page5" title="Algebra"><i class="fas fa-superscript"></i><span class="indicator">Algebra</span></a>
-    <a href="#" data-page="page6" title="Geometry"><i class="fas fa-drafting-compass"></i><span class="indicator">Geometry</span></a>
-    <a href="#" data-page="page7" title="Trigonometry"><i class="fas fa-circle-notch"></i><span class="indicator">Trigonometry</span></a>
-    <a href="#" data-page="page8" title="Calculus"><i class="fas fa-infinity"></i><span class="indicator">Calculus</span></a>
+  <div class="toolkit-icons fadeUp">
+    <button type="button" data-page="page1" title="Arithmetic & Basic Math">
+      <i class="fas fa-plus"></i>
+      <span class="indicator">Arithmetic &<br>Basic Math</span>
+    </button>
+    <button type="button" data-page="page2" title="Probability & Statistics">
+      <i class="fas fa-chart-line"></i>
+      <span class="indicator">Probability &<br>Statistics</span>
+    </button>
+    <button type="button" data-page="page3" title="Measurement & Converter">
+      <i class="fas fa-ruler-combined"></i>
+      <span class="indicator">Measurement<br>& Converter</span>
+    </button>
+    <button type="button" data-page="page4" title="Number Theory Tools">
+      <i class="fas fa-square-root-alt"></i>
+      <span class="indicator">Number<br>Theory Tools</span>
+    </button>
+    <button type="button" data-page="page5" title="Algebra">
+      <i class="fas fa-superscript"></i>
+      <span class="indicator">Algebra</span>
+    </button>
+    <button type="button" data-page="page6" title="Geometry">
+      <i class="fas fa-shapes"></i>
+      <span class="indicator">Geometry</span>
+    </button>
+    <button type="button" data-page="page7" title="Trigonometry">
+      <i class="fas fa-drafting-compass"></i>
+      <span class="indicator">Trigonometry</span>
+    </button>
+    <button type="button" data-page="page8" title="Calculus">
+      <i class="fas fa-infinity"></i>
+      <span class="indicator">Calculus</span>
+    </button>
   </div>
 </div>
 
-<!-- === Pages/Carousel Content === -->
+<!-- Toolkit Pages -->
 <div class="toolkit-pages">
-  <section id="page1" class="toolkit-page">🧮 Arithmetic & Basic Math</section>
-  <section id="page2" class="toolkit-page">📊 Statistics & Probability</section>
-  <section id="page3" class="toolkit-page">📏 Measurement / Converters</section>
-  <section id="page4" class="toolkit-page">🔢 Number Theory & Tools</section>
-  <section id="page5" class="toolkit-page">➗ Algebra</section>
-  <section id="page6" class="toolkit-page">📐 Geometry</section>
-  <section id="page7" class="toolkit-page">📐 Trigonometry</section>
-  <section id="page8" class="toolkit-page">∫ Calculus</section>
+  <!-- Page 1: Arithmetic -->
+  <div class="toolkit-page" id="page1"><!--container -->
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front"><!--card -->
+      <img src="arithmetic.png" alt="Arithmetic Cover">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content"> <!--intro -->
+      <h2>Arithmetic & Basic Math</h2>
+      <p>Perform basic operations, work with fractions, analyze ratios, check number properties, and convert between decimals, percentages, and ratios.
+      </p>  
+    </div>
+    <a class="explore-btn" data-modal="projectModal1">Explore Project</a>
+  </div>
+
+  <!-- Page 2: Statistics -->
+  <div class="toolkit-page" id="page2">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      
+      <img src="light-probability.png" alt="Statistics Cover" class="icons-img light">
+      <img src="probability.png" alt="Statistics Cover" class="icons-img dark">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Probability & Statistics</h2>
+      <p>Calculate key statistics, analyze data variability, solve probability problems, and work with combinations, permutations, and expected values.</p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal2">Explore Project</a>
+  </div>
+
+  <!-- Page 3: Measurement -->
+  <div class="toolkit-page" id="page3">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      <img src="measurements.png" alt="Measurement Cover">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Measurement & Converter</h2>
+      <p>Easily convert between units for length, area, volume, speed, temperature, time, and more.</p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal3">Explore Project</a>
+  </div>
+
+  <!-- Page 4: Number Theory -->
+  <div class="toolkit-page" id="page4">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      <img src="numtheory.png" alt="Number Theory Cover">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Number Theory Tools</h2>
+      <p>Convert number bases, check primes, factor numbers, find GCD/LCM, and generate number sequences for advanced math tasks.</p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal4">Explore Project</a>
+  </div>
+
+  <!-- Page 5: Algebra -->
+  <div class="toolkit-page" id="page5">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      <img src="algebra.png" alt="Algebra Cover">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Algebra</h2>
+      <p>Solve and simplify equations, factor expressions, and handle systems of equations with tools for linear, quadratic, and cubic problems.
+      </p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal5">Explore Project</a>
+  </div>
+
+  <!-- Page 6: Geometry -->
+  <div class="toolkit-page" id="page6">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      <img src="geometry.png" alt="Geometry Cover">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Geometry</h2>
+      <p>Quickly calculate area, perimeter, volume, and surface area for a wide range of 2D and 3D shapes.</p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal6">Explore Project</a>
+  </div>
+
+  <!-- Page 7: Trigonometry -->
+  <div class="toolkit-page" id="page7">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      <img src="trigonometry.png" alt="Trigonometry Cover">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Trigonometry</h2>
+      <p>Evaluate trigonometric functions, solve triangles, convert angles, and check identities for all your trigonometry needs.</p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal7">Explore Project</a>
+  </div>
+
+  <!-- Page 8: Calculus -->
+  <div class="toolkit-page" id="page8">
+    <button class="close-btn" title="Close">×</button>
+    <div class="chapter-front">
+      <img src="light-calculus.png" alt="Calculus Cover" class="icons-img light">
+      <img src="calculus.png" alt="Calculus Cover" class="icons-img dark">
+      <div class="overlay"></div>
+    </div>
+    <div class="chapter-content">
+      <h2>Calculus</h2>
+      <p>Find derivatives, integrals, limits, and series expansions to tackle core calculus problems with ease.</p>
+    </div>
+    <a class="explore-btn" data-modal="projectModal8">Explore Project</a>
+  </div>
 </div>
-
-
 
 </section>
 
-<!-- Skills Section -->
+  <!-- Modal -->
+
+<!-- Arithmetic -->
+<div class="modal" id="projectModal1">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+        data-explanation="Calculator Functions
+  - Calculates the square root of the current value.
+  - Evaluates the expression (including percentages).
+  - Converts % values into decimal form.
+  - Calculates the decimal numbers.
+
+  Calculator supports
+  - Basic arithmetic (+, -, ×, ÷, %)
+  - Handles a positive and negative number.
+  - Switches between light and dark mode.
+">
+          <img src="arithmetic.png" alt="Simple Calculator" class="calc-img light">
+          <img src="1.png" alt="Simple Calculator" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/simple-calculator.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Fraction Calculator Functions
+  - Handles a positive and negative number.
+  - Finds the greatest common divisor (for simplification).
+  - Reduces fractions to simplest form.
+  - Solves the fraction operation and shows fraction + decimal.
+
+  Calculator supports
+  - Mixed numbers (whole + fraction parts)
+  - Operations: addition, subtraction, multiplication, division
+  - Automatic simplification of fractions
+  - Decimal conversion (rounded to 2 decimals)
+  - Switches between light and dark theme.
+">
+          <img src="2l.png" alt="Fraction Calculator"  class="calc-img light">
+          <img src="2.png" alt="Fraction Calculator"  class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/fraction-operation.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Ratio & Proportion Calculator Functions
+  - Switches between Ratio mode and Proportion mode.
+  - Solves the missing value in ratio or proportion (direct/inverse).
+
+  Calculator supports
+  - Ratio solving (a:b = c:d → find missing value)
+  - Proportion solving (direct and inverse proportion)
+  - Auto-calculation when 3 of 4 values are filled
+  - Decimal formatting (up to 4 decimals, no unnecessary zeros)
+  - Input validation (forces exactly 3 values before solving)
+  - Switches between light and dark theme.
+">
+          <img src="3l.png" alt="Ratio & Proportion" class="calc-img light">
+          <img src="3.png" alt="Ratio & Proportion" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/ratio-proportion.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Number Checker Functions
+-Validates input format (supports %, decimals, +/– signs).
+-Analyzes number type: integer/decimal, positive/negative.
+-Checks if integer is even/odd, prime, or a perfect square.
+
+Calculator supports
+-Optional light & dark theme toggle">
+          <img src="4l.png" alt="Number Checker" class="calc-img light">
+          <img src="4.png" alt="Number Checker" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/number-checker.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Decimal, Percentage & Ratio Converter Functions
+-Handles keyboard input for numbers, decimal point, %, and ratio colon (:).
+-Auto-detects input type (decimal, percentage, or ratio).
+-Converts percentages into decimal and ratio form.
+-Converts ratios into decimal and percentage form.
+-Converts decimals into percentage and ratio form.
+-Simplifies ratios using the greatest common divisor (GCD).
+
+Calculator supports
+-Light & dark theme switching
+">
+          <img src="5l.png" alt="Decimal, Ratio & Proportion" class="calc-img light">
+          <img src="5.png" alt="Decimal, Ratio & Proportion" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/decimal-ratio.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Random Number Ball Generator Functions
+-Validates inputs to ensure min and max are numbers and in correct order.
+-Displays random numbers inside the ball.
+
+Calculator supports
+-Random number generation within user-defined min–max range
+-Light & dark theme toggle for better user experience
+">
+          <img src="6l.png" alt="Number Generator" class="calc-img light">
+          <img src="6.png" alt="Number Generator" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/random-number.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Place Value Calculator Functions
+-Displays place value breakdown for both integer and decimal parts.
+-Labels each digit with its correct place (Ones, Tens, Tenths, Hundredths, etc.).
+-Automatically scrolls results as new place values are added.
+
+Calculator supports
+-Integer place value breakdown (Ones, Tens, Hundreds, Thousands, etc.)
+-Decimal place value breakdown (Tenths, Hundredths, Thousandths, etc.)
+-Light & dark theme toggle
+">
+          <img src="7l.png" alt="Plave Value" class="calc-img light">
+          <img src="7.png" alt="Plave Value" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/place-value.html">Live Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Probability -->
+<div class="modal" id="projectModal2">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+            data-explanation="Statistics Calculator Functions
+- Calculates Sample & Population Standard Deviation with step-by-step solution.
+- Computes Mean, Median, Mode, and Range (with sorted data shown).
+- Calculates Quartiles (Q1, Q3) and Interquartile Range (IQR).
+- Computes Variance (sample & population) with full derivation.
+- Calculates Z-scores given value, mean, and standard deviation.
+- Computes Coefficient of Variation (CV) in percentage form.
+- Calculates Probability of an event (favorable ÷ total).
+- Computes Combinations and Permutations with factorial breakdown.
+- Calculates Expected Value (EV) of discrete random variables with tabular step-by-step solution.
+-Light & dark theme toggle
+">
+          <img src="8l.png" alt="Probability" class="calc-img light">
+          <img src="8.png" alt="Probability" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/statistics.html">Live Demo</button>
+        </div>              
+      </div>
+    </div>
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Measurements -->
+<div class="modal" id="projectModal3">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+        data-explanation="Numerical Converter Calculator Functions
+Decimal ⇄ Fraction Converter
+-Converts decimal numbers into simplified fractions.
+-Converts fractions (a/b) into decimal form.
+
+Arabic ⇄ Roman Converter
+-Converts Arabic numerals (1–3999) into Roman numerals.
+-Converts Roman numerals into Arabic integers.
+
+Calculator supports
+-Light & dark theme toggle
+">
+          <img src="9l.png" alt="Numerical Conversions" class="calc-img light">
+          <img src="9.png" alt="Numerical Conversions" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/numerical-conversions.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Derived Measurements Converter Functions
+Speed Conversion
+-Speed unit conversions (m/s, km/h, mph, knots)
+
+Area Conversion
+-Area unit conversions (m², km², ft², acre, ha)
+
+Angle Conversion
+-Angle unit conversions (degrees, radians, gradians)
+
+Time Conversion
+-Time unit conversions (seconds, minutes, hours, days)
+
+Calculator supports
+-Light & dark theme toggle
+">
+          <img src="10l.png" alt="Derived Measurements"  class="calc-img light">
+          <img src="10.png" alt="Derived Measurements"  class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/derived-measurements.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Fundamental Physical Measurements
+Temperature Conversion
+-Temperature unit conversions (°C, °F, K, °R)
+
+Length Conversion
+-Length unit conversions (mm, cm, m, km, in, ft, yd, mi)
+
+Weight / Mass Conversion
+-Weight/Mass unit conversions (mg, g, kg, t, oz, lb, st)
+
+Volume Conversion
+-Volume unit conversions (ml, L, m³, tsp, tbsp, cup, pt, qt, gal)
+
+Calculator supports
+-Light & dark theme toggle
+">
+          <img src="11l.png" alt="Fundamental Physical Measurements"  class="calc-img light">
+          <img src="11.png" alt="Fundamental Physical Measurements"  class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/physical-measurements.html">Live Demo</button>
+        </div>             
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Number Theory -->
+<div class="modal" id="projectModal4">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+        data-explanation="Number System & Conversions
+Base Converter Functions
+-Dynamically updates input placeholders depending on selected base (Binary, Octal, Decimal, Hexadecimal).
+-Converts between Binary (2), Octal (8), Decimal (10), and Hexadecimal (16).
+
+Base Calculator Functions
+-Supports addition, subtraction, multiplication, and division in any selected base.
+-Converts operands from the base → decimal → back to chosen base after calculation.
+
+Custom Base Converter Functions
+-Converts numbers between any two bases (from base-2 up to base-36).
+-Converts input → decimal → target base.
+
+Shared Features
+-Light & dark theme toggle for better accessibility.
+">
+          <img src="12l.png" alt="Number System & Conversions" class="calc-img light">
+          <img src="12.png" alt="Number System & Conversions" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/number-system.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Number Theory Tools
+GCD & LCM Calculation
+-Calculates Greatest Common Divisor (GCD) and Least Common Multiple (LCM).
+-Accepts 2 to 20 numbers separated by commas.
+
+Prime Check
+-Determines if a given number is Prime or Not Prime.
+-Accepts only positive integers up to 1 billion.
+
+Factorization
+-Generates and displays all divisors of the given number.
+-Accepts only positive integers up to 1 billion.
+-Provides results in ascending order, comma-separated.
+
+Calculator supports
+-Light & dark theme toggle.
+">
+          <img src="13l.png" alt="Number Theory Tools" class="calc-img light">
+          <img src="13.png" alt="Number Theory Tools" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/number-theory.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Sequences and Series
+Arithmetic Progression (AP)
+-Generates an arithmetic series based on first term (a₁), common difference (d), and number of terms (n).
+-Formula used: aₙ = a₁ + (n-1)d.
+-Calculates and displays both the series and its total sum.
+-Sum formula: Sₙ = (n/2) × [2a₁ + (n-1)d].
+
+Geometric Progression (GP)
+-Generates a geometric series based on first term (a₁), common ratio (r), and number of terms (n).
+-Formula used: aₙ = a₁ × rⁿ⁻¹.
+-Calculates and displays both the series and its total sum.
+-Sum formula: Sₙ = a₁(1−rⁿ) / (1−r), with handling for r = 1.
+
+Calculator supports
+-Light & dark theme toggle.
+">
+          <img src="14l.png" alt="Sequences and Series" class="calc-img light">
+          <img src="14.png" alt="Sequences and Series" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/sequence-series.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Exponent & Root Calculator Functions
+Exponent Calculator
+-Calculates exponentiation for any real base and exponent.
+-Uses formula: result = base ^ exponent.
+-Handles positive, negative, and fractional exponents.
+
+Root Calculator
+-Calculates n-th root of a given number.
+-Uses formula: result = number ^ (1/degree).
+-Supports square roots, cube roots, and higher roots.
+
+Calculator supports
+-Light & dark theme toggle.
+">
+          <img src="15l.png" alt="Exponents and Roots" class="calc-img light">
+          <img src="15.png" alt="Exponents and Roots" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/exponent-root.html">Live Demo</button>
+        </div>            
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Algebra -->
+<div class="modal" id="projectModal5">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+            data-explanation="Linear Equation Solver Functions
+Single Variable Equation (ax + b = 0)
+-Solves linear equation with one unknown (x).
+-Handles special cases:
+  - a = 0, b = 0 → Infinite solutions.
+  - a = 0, b ≠ 0 → No solution.
+-Provides step-by-step explanation of solution.
+
+Two Linear Equations
+-Solves using Cramer’s Rule:
+  D = a₁b₂ - a₂b₁  
+  Dx = c₁b₂ - c₂b₁  
+  Dy = a₁c₂ - a₂c₁  
+  x = Dx / D, y = Dy / D
+-Handles special cases:
+  - D = 0, Dx = 0, Dy = 0 → Infinite solutions.
+  - D = 0, Dx ≠ 0 or Dy ≠ 0 → No solution.
+-Displays results in multiple forms:
+  - Standard Form (ax + by + c = 0)
+  - Slope-Intercept Form (y = mx + b)
+  - Point-Slope Form (y - y₁ = m(x - x₁))
+-Step-by-step explanation provided for clarity.
+
+Calculator supports
+-Light & dark theme toggle.
+">
+          <img src="16l.png" alt="Linear Equation" class="calc-img light">
+          <img src="16.png" alt="Linear Equation" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/linear-equation.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Quadratic Equation Solver Functions
+- Solves quadratic equations of the form ax² + bx + c = 0.
+
+Discriminant and Roots
+- Computes discriminant: D = b² - 4ac
+- Handles all cases:
+  - D > 0 → Two real and distinct roots.
+  - D = 0 → One real repeated root.
+  - D < 0 → Two complex conjugate roots.
+
+Additional Features
+- Detects and warns if a = 0 (not a quadratic equation).
+- Provides vertex coordinates (xᵥ, yᵥ).
+- Displays axis of symmetry (x = -b / 2a).
+- States parabola direction (opens upward if a > 0, downward if a < 0).
+- Step-by-step explanation included in result output.
+
+Calculator supports
+- Light & dark theme toggle.
+">
+          <img src="17l.png" alt="Quadratic Equation" class="calc-img light">
+          <img src="17.png" alt="Quadratic Equation" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/quadratic-equation.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Cubic Equation Solver Functions
+- Solves cubic equations of the form ax³ + bx² + cx + d = 0.
+
+Cardano’s Method
+- Converts the cubic into depressed cubic form for simplification.
+- Computes helper values:
+  f = (3ac - b²) / 3a²
+  g = (2b³ - 9abc + 27a²d) / 27a³
+  h = g² / 4 + f³ / 27
+- Handles cases based on discriminant (h):
+  - h > 0 → One real root and two complex roots.
+  - f = g = h = 0 → Triple real root.
+  - h ≤ 0 → Three real distinct roots.
+- Step-by-step calculation process displayed with intermediate values.
+
+Calculator supports
+- Light & dark theme toggle.
+">
+          <img src="18l.png" alt="Cubic Equation" class="calc-img light">
+          <img src="18.png" alt="Cubic Equation" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/cubic-equation.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Polynomial Simplifier Functions
+- Accepts algebraic expressions with numbers, variables, parentheses, and operators.
+
+Reorder Polynomial
+- Converts ** to ^ for exponent notation.
+- Splits into terms and aggregates coefficients by exponent.
+- Handles implicit coefficients (+, -, blank → 1 or -1).
+- Supports single-variable polynomials.
+- Combines like terms and removes zero terms.
+- Outputs in conventional polynomial order (highest power first).
+
+Special Features
+- Step-by-step simplification trace shown under the result:
+  - Preprocessed expression.
+  - Expanded form.
+  - Combined terms.
+  - Reordered polynomial.
+
+Calculator supports
+- Light & dark theme toggle.
+">
+          <img src="19l.png" alt="Simplify Expression" class="calc-img light">
+          <img src="19.png" alt="Simplify Expression" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/simplify-expression.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Factor Expression
+Quadratic Factoring Calculator Functions
+- Accepts three inputs: a, b, and c for quadratic equation ax² + bx + c.
+
+Factoring Process
+- Step 1: Displays the coefficients (a, b, c).
+- Step 2: Calculates product ac = a * c.
+- Step 3: Finds integer pair (i, j) such that i * j = ac and i + j = b.
+- Step 4: Splits the middle term using (i, j).
+- Groups terms and factors them using GCD.
+- Final Answer: Shows factored form, or indicates not factorable over integers.
+
+Calculator supports
+- Light & dark theme toggle.
+">
+          <img src="20l.png" alt="Factor Expression" class="calc-img light">
+          <img src="20.png" alt="Factor Expression" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/factor-expression.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="System of Linear Equations Solver Functions
+- Dynamically renders input grid for 2–4 variables based on user selection.
+
+Equation Solver
+- Constructs coefficient matrix (A) and constants vector (B) from user inputs.
+- Determinant method (Cramer’s Rule):
+  - Computes D = det(A).
+  - For each variable xi: replaces ith column of A with B, computes Di, and solves xi = Di / D.
+- Handles 2×2, 3×3, and 4×4 systems.
+- Fallback Gaussian elimination solver also implemented for numerical stability.
+
+Result Display
+- Variables labeled x, y, z, w depending on number of equations.
+- Solutions presented in stacked format for clarity.
+
+Calculator supports
+- Light & dark theme toggle.
+">
+          <img src="21l.png" alt="System of Equations" class="calc-img light">
+          <img src="21.png" alt="System of Equations" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/system-equation.html">Live Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Geometry -->
+<div class="modal" id="projectModal6">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+            data-explanation="Area Calculator
+
+Functions
+- Solves circle area given radius, or radius given area.
+- Solves rectangle area, width, or height (A = w × h).
+- Solves triangle area, base, or height (A = ½bh).
+- Solves square area or side length (A = s²).
+- Solves parallelogram area, base, or height (A = b × h).
+- Solves trapezoid area, height, or missing base (requires any 3 values).
+- Solves rhombus area or missing diagonal (A = d₁d₂ / 2).
+- Solves equilateral triangle area or side (A = √3/4 × a²).
+- Solves ellipse area or missing semi-axis (A = πab).
+- Solves sector area, angle, or radius (A = θ/360 × πr²).
+- Solves regular polygon area or side length (A = ns² / (4tan(π/n))).
+
+Calculator supports
+- Circle, rectangle, triangle, square, parallelogram, trapezoid.
+- Rhombus, equilateral triangle, ellipse, circle sector, regular polygon.
+- Solving for areas and unknown dimensions.
+- Light & dark theme toggle.">
+          <img src="22l.png" alt="Area" class="calc-img light">
+          <img src="22.png" alt="Area" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/area-calculator.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Perimeter Calculator
+
+Functions
+- Solves circle perimeter given radius, or radius given perimeter (C = 2πr).
+- Solves rectangle perimeter, width, or height (P = 2(w + h)).
+- Solves triangle perimeter or missing side (requires perimeter + 2 sides or all 3 sides).
+- Solves square perimeter or side (P = 4a).
+- Solves parallelogram perimeter, base, or side (P = 2(a + b)).
+- Solves trapezoid perimeter or missing side (requires perimeter + 3 sides or all 4 sides).
+- Solves regular polygon perimeter or side (P = n × a).
+- Solves ellipse perimeter using approximation P ≈ 2π√((a² + b²) / 2).
+
+Calculator supports
+- Circle, rectangle, triangle, square, parallelogram, trapezoid.
+- Regular polygon (any n ≥ 3).
+- Ellipse (approximate perimeter).
+- Solving for perimeter or unknown dimension(s).
+- Light & dark theme toggle.
+">
+          <img src="23l.png" alt="Perimeter" class="calc-img light">
+          <img src="23.png" alt="Perimeter" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/perimeter-calculator.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Volume Calculator
+
+Functions
+- Solves sphere volume or radius (V = 4/3πr³).
+- Solves cube volume or side (V = a³).
+- Solves rectangular prism volume, length, width, or height (V = lwh).
+- Solves cylinder volume, radius, or height (V = πr²h).
+- Solves cone volume, radius, or height (V = 1/3πr²h).
+- Solves rectangular pyramid volume, length, width, or height (V = 1/3lwh).
+- Solves triangular prism volume, base, height, or length (V = ½bhL).
+- Solves hemisphere volume or radius (V = 2/3πr³).
+- Solves ellipsoid volume or missing semi-axis (V = 4/3πabc).
+
+Calculator supports
+- Sphere, cube, rectangular prism, cylinder, cone.
+- Pyramid, triangular prism, hemisphere, ellipsoid.
+- Solving for volume or missing dimension(s).
+- Light & dark theme toggle.
+">
+          <img src="24l.png" alt="Volume" class="calc-img light">
+          <img src="24.png" alt="Volume" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/volume-calculator.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Surface Area Calculator
+
+Functions
+- Solves sphere surface area or radius (SA = 4πr²).
+- Solves cube surface area or side length (SA = 6a²).
+- Solves rectangular prism surface area, length, width, or height (SA = 2(lw + lh + wh)).
+- Solves cylinder surface area, radius, or height (SA = 2πr(h + r)).
+- Solves cone surface area, slant height, or radius (SA = πr(l + r)).
+- Solves square pyramid surface area, side, or slant height (SA = a² + 2al).
+- Solves triangular prism surface area given triangle base, height, sides, and length.
+
+Calculator supports
+- Sphere, cube, rectangular prism, cylinder, cone.
+- Square pyramid, triangular prism.
+- Solving for surface area or missing dimension(s).
+- Light & dark theme toggle.
+">
+          <img src="25l.png" alt="Surface Area" class="calc-img light">
+          <img src="25.png" alt="Surface Area" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/surface-area.html">Live Demo</button>
+        </div>             
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Trigonometry -->
+<div class="modal" id="projectModal7">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+        data-explanation="Trigonometry Calculator
+
+Functions
+- Evaluates sin, cos, tan, cot, sec, csc for an angle in degrees and radians.
+- Evaluates inverse trig functions (asin, acos, atan, acot, asec, acsc).
+- Angle unit conversions (deg ↔ rad ↔ grad).
+- Solves simple trig equations (sin, cos, tan, etc.).
+
+Calculator Supports
+- Light & dark theme toggle.
+">
+          <img src="26l.png" alt="Trigonometric Calculator" class="calc-img light">
+          <img src="26.png" alt="Trigonometric Calculator" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/trig-function.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Triangle Solver
+Functions
+- Solves missing side (a, b, or c) using the Pythagorean Theorem.
+- Applies SOH-CAH-TOA to solve right triangle problems (angles or sides).
+- Uses the Law of Sines to solve for missing angles or sides.
+- Uses the Law of Cosines to solve triangles with known sides/angles.
+
+Calculator Supports
+- Light & dark theme toggle.">
+          <img src="27l.png" alt="Triangle Solver" class="calc-img light">
+          <img src="27.png" alt="Triangle Solver" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/triangle-solver.html">Live Demo</button>
+        </div>
+        <div class="carousel-slide" 
+        data-explanation="Equations Solver & Checker
+Advanced Trigonometry Calculator
+- Solves trigonometric equations (sin, cos, tan, cot, sec, csc) with general and specific solutions.
+- Checks trigonometric identities by evaluating expressions with a given x value.
+- Supports multiple angle units (degrees, radians).
+- Provides true/false verification for identities with calculated results.
+
+Calculator Supports
+- Light & dark theme toggle.
+">
+          <img src="28l.png" alt="Equations Solver & Checker" class="calc-img light">
+          <img src="28.png" alt="Equations Solver & Checker" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/equations-solver.html">Live Demo</button>
+        </div> 
+        <div class="carousel-slide" 
+        data-explanation="Angle & Unit Circle Calculator
+
+Functions
+- Angle unit conversions (degrees, radians, gradians).
+- Swap function with real-time conversion update.
+- Basic trig functions (sin, cos, tan, cot, sec, csc).
+- Unit circle solving with coordinates and all trig ratios.
+
+Calculator Supports
+- Light & dark theme toggle.
+">
+          <img src="29l.png" alt="Angle & Unit Circle" class="calc-img light">
+          <img src="29.png" alt="Angle & Unit Circle" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/angle-unit.html">Live Demo</button>
+        </div>             
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+<!-- Calculus -->
+<div class="modal" id="projectModal8">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide" 
+            data-explanation="Calculus Calculator
+
+Functions
+- Derivative calculation (symbolic + numeric at a point).
+- Integral calculation (definite numeric + indefinite symbolic with “+ C”).
+- Limit evaluation (left/right check with result or “does not exist”).
+- Taylor/Maclaurin series expansion (configurable order).
+- Supports input preprocessing (ln → log, e^x → exp(x), √ → sqrt).
+
+Calculator Supports
+- Light & dark theme toggle.
+">
+          <img src="30l.png" alt="Calculus" class="calc-img light">
+          <img src="30.png" alt="Calculus" class="calc-img dark">
+          <button class="live-btn" 
+          data-url="https://fermcancino.github.io/engineers-toolkit/calculus.html">Live Demo</button>
+        </div>              
+      </div>
+    </div>
+    <!-- Info Button -->
+    <button class="info-btn">?</button>
+    <div class="explanation-card"></div>
+  </div>
+</div>
+
+
+  <!-- Skills Section -->
 <section id="skills" class="skills-section">
-  <h2 class="section-title">My Skills</h2>
+  <h2 class="section-title autoShow">My Skills</h2>
   <div class="skills-container">
-    <div class="skill-card">
+    <div class="skill-card fadeUp">
       <i class="fab fa-python"></i>
       <h3>Python</h3>
     </div>
-    <div class="skill-card">
+    <div class="skill-card fadeUp">
       <i class="fab fa-js-square"></i>
       <h3>JavaScript</h3>
     </div>
-    <div class="skill-card">
+    <div class="skill-card fadeUp">
       <i class="fab fa-html5"></i>
       <h3>HTML5</h3>
     </div>
-    <div class="skill-card">
+    <div class="skill-card fadeUp">
       <i class="fab fa-css3-alt"></i>
       <h3>CSS3</h3>
     </div>
-    <div class="skill-card">
+    <div class="skill-card fadeUp">
       <i class="fas fa-cogs"></i>
       <h3>Automation</h3>
     </div>
-    <div class="skill-card">
+    <div class="skill-card fadeUp">
       <i class="fab fa-github"></i>
       <h3>GitHub</h3>
     </div>
@@ -257,14 +1193,14 @@
 
 <!-- Certificates Section -->
 <section id="certificates" class="certificates-section">
-  <h2 class="section-title">Certificates</h2>
+  <h2 class="section-title autoShow">Certificates</h2>
   <div class="certificates-grid">
     
     <!-- Certificate Card -->
     <div class="certificate-card">
       <div class="certificate-inner">
         <!-- Front -->
-        <div class="certificate-front">
+        <div class="certificate-front fadeUp">
           <img src="python.jpg" alt="Certificate 1">
         </div>
         <!-- Back -->
@@ -278,7 +1214,7 @@
 
     <div class="certificate-card">
       <div class="certificate-inner">
-        <div class="certificate-front">
+        <div class="certificate-front fadeUp">
           <img src="javascript.jpg" alt="Certificate 2">
         </div>
         <div class="certificate-back">
@@ -291,7 +1227,7 @@
 
     <div class="certificate-card">
       <div class="certificate-inner">
-        <div class="certificate-front">
+        <div class="certificate-front fadeUp">
           <img src="html.jpg" alt="Certificate 2">
         </div>
         <div class="certificate-back">
@@ -304,7 +1240,7 @@
 
     <div class="certificate-card">
       <div class="certificate-inner">
-        <div class="certificate-front">
+        <div class="certificate-front fadeUp">
           <img src="css.jpg" alt="Certificate 2">
         </div>
         <div class="certificate-back">
@@ -317,7 +1253,7 @@
 
     <div class="certificate-card">
       <div class="certificate-inner">
-        <div class="certificate-front">
+        <div class="certificate-front fadeUp">
           <img src="frontend.jpg" alt="Certificate 2">
         </div>
         <div class="certificate-back">
@@ -330,7 +1266,7 @@
 
     <div class="certificate-card">
       <div class="certificate-inner">
-        <div class="certificate-front">
+        <div class="certificate-front fadeUp">
           <img src="python development.jpg" alt="Certificate 2">
         </div>
         <div class="certificate-back">
@@ -344,10 +1280,75 @@
   </div>
 </section>
 
+<!-- Contact Me -->
+<section id="contact" >
+  <h2 class="section-title autoShow">Get in Touch</h2>
+  <div class="contact-container">
+    
+    <form id="contactForm" class="contact-form fadeUp">
+      <h3>Contact Me</h3>
+
+      <div class="input-box">
+        <input type="text" name="from_name" id="name" required>
+        <label for="name" class="label">Name</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" name="reply_to" id="email" required>
+        <label for="email" class="label">Email</label>
+      </div>
+
+      <div class="input-box">
+        <textarea name="message" id="message" rows="6" required></textarea>
+        <label for="message" class="label">Your Message</label>
+      </div>
+
+      <!-- ensure messages go to your Gmail -->
+      <input type="hidden" name="to_email" value="fermcancino@gmail.com">
+
+      <button class="submit" type="submit">Send Message</button>
+      <p id="status"></p>
+    </form>
+
+    <!-- Right: GIF -->
+    <div class="gif-box fadeUp">
+      <img src="contact-light.gif" alt="Contact GIF" class="contact-light">
+      <img src="contact-dark.gif" alt="Contact GIF" class="contact-dark">
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-content">
+    <!-- Social links -->
+    <div class="social-links">
+      <a href="https://github.com/fermcancino" target="_blank"><span class="text">Github</span><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ferminacancino-electronicsengineer" target="_blank"><span class="text">LinkedIn</span><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:fermcancino@gmail.com"><span class="text">Email</span><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/639463002207" target="_blank"><span class="text">WhatsApp</span><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+
+    <div class="logo-copy">
+      <img src="logo.png" alt="My Logo" class="footer-logo">
+      <p class="copy">&copy; 2025 Fermina Cancino.</p>
+    </div>
+  </div>
+</footer>
+
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  once: true 
+});
+</script>
 <script src="script.js"></script>
 
 </body>
